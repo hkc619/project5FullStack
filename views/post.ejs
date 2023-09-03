@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="hkc619" />
+    <%- include ("partials/header") %>
+    <title>Post</title>
+  </head>
+  <body>
+    <%- include ("partials/nav") %>
+    <main style="padding: 3rem">
+      <%- include ("partials/msg") %>
+      <form action="/profile/post" method="POST">
+        <div class="form-group">
+          <label for="exampleforTitle">Title</label>
+          <input
+            name="title"
+            type="text"
+            class="form-control"
+            id="exampleforTitle"
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="exampleforContent">Content</label>
+          <textarea
+            class="form-control"
+            id="exampleforContent"
+            aria-describedby="emailHelp"
+            name="content"
+          ></textarea>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

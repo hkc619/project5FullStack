@@ -1,0 +1,38 @@
+<% if(error !=""){ %>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong><%= error_msg %></strong> You should check in on some of those fields
+  below.
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %> <% if(error_msg!=""){ %>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong><%= error_msg %></strong> You should check in on some of those fields
+  below.
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %>
+
+<!--break-->
+
+<% if(success_msg!=""){ %>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong><%= success_msg %></strong> You should check in on some of those
+  fields below.
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %>
